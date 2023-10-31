@@ -95,8 +95,10 @@ ul{
     background-color: #ffffff;
     min-height: 300px;
     border-radius: 25px;
-    display: flex;
     margin: 10px;
+    color: #9792e4;
+    padding: 20px;
+
 }
 
 h3{
@@ -136,15 +138,32 @@ p{
 
 .partners{
     text-align: center;
-    
+    margin-top: 50px;
 
 }
 
 .testimonials{
     background-color: #9792e4;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding: 20px;
+    border-radius: 50px;
 }
 
+
+.fa-quote-left{
+    font-size: 30px;
+    color: white;
+}
+
+.fa-quote-right{
+    font-size: 30px;
+    color: white;
+}
 
 /*buttons*/
 
@@ -173,6 +192,14 @@ p{
     padding: 10px;
     color: black;
     margin-top: 30px;
+}
+
+.more{
+    background-color: #9792e4;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    
 }
 
 
@@ -210,9 +237,18 @@ p{
 .testimonials-img{
     background-image: url(img/testimonial1.jpg);
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 200px;
+    background-size: cover;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+.middle-img{
+    background-image: url(img/testimonial2.jpg);
+}
+
+.bottom-img{
+    background-image: url(img/testimonial3.jpg);
 }
 
 
@@ -252,6 +288,13 @@ p{
     .row-planning{
         display: flex;
         flex-direction: column;
+    }
+
+    .testimonials{
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
 }
