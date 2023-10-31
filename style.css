@@ -176,6 +176,10 @@ p{
     
 }
 
+.c-footer{
+    text-align: center;
+}
+
 /*buttons*/
 
 .button{
@@ -216,6 +220,13 @@ p{
 
 .linkedin{
     padding: 5px;
+}
+
+.get-started{
+    color: #9792e4;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
