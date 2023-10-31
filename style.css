@@ -165,6 +165,17 @@ p{
     color: white;
 }
 
+.about-us{
+    background-color: white;
+    color: black;
+}
+
+.patrizio{
+    background-color: white;
+    margin-top: 50px;
+    
+}
+
 /*buttons*/
 
 .button{
@@ -199,7 +210,12 @@ p{
     color: white;
     padding-left: 50px;
     padding-right: 50px;
+    border-color: #9792e4;
     
+}
+
+.linkedin{
+    padding: 5px;
 }
 
 
@@ -249,6 +265,15 @@ p{
 
 .bottom-img{
     background-image: url(img/testimonial3.jpg);
+}
+
+.patrizio-img{
+    background-image: url(img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
 }
 
 
