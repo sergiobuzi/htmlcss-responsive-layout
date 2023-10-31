@@ -1,0 +1,165 @@
+/*common*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    font-size: 20px;
+}
+
+.button{
+    background-color: white ;
+    border: white 1px solid;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+
+}
+
+.container{
+    width: 100%;
+    min-height: 500px;
+}
+
+.bg-purple{
+    background-color:#9792e4 ;
+    color: white;
+}
+
+
+/*Mobile first*/
+
+nav{
+    width: 100%;
+    margin: auto;
+    background-color: #0184fc;
+}
+
+#row-nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 75px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+}
+
+ul{
+    display: none;
+    color: white;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.row{
+    display: block;
+    
+}
+
+.container-width{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-3{
+    width: 100%;
+    background-color: #b5dcfe;
+    min-height: 300px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.col-2{
+    width:100%;
+    /* debug */
+    background-color: blue;
+    min-height: 100px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.col-mobile{
+    width: 100%;
+    background-color: #ffffff;
+    min-height: 300px;
+    border-radius: 25px;
+    display: flex;
+    margin: 10px;
+}
+
+/* tablet view */
+
+@media all and (min-width:480px){
+
+    #col-3-big{
+        width: calc((100% / 3 - 10px) * 2);
+    }
+    
+    .row{
+        display: flex;
+        
+    }
+
+    .col-3{
+        width: calc(100% / 3 - 20px);
+    }
+
+    .benefits{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col-mobile{
+        width: calc(50% - 20px);   
+    }
+
+}
+
+
+
+
+/* desktop view */
+
+@media all and (min-width:1000px){
+
+    #row-nav{
+        width: 70%;
+        margin: auto;
+        padding: 0;
+    }
+
+    ul{
+        display: flex;
+        font-size: 20px;
+    }
+
+    #hamburger-menu{
+        display: none;
+    }
+
+    .container-width{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .col-2{
+       display: flex;
+       width: 40%;
+       margin: 0 auto;
+       
+    }
+
+    .col-mobile{
+        width: calc(100% / 3 - 20px); 
+    }
+
+}
