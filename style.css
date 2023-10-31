@@ -229,6 +229,14 @@ p{
     padding-right: 40px;
 }
 
+.absolute{
+    color: #9792e4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+}
+
 
 /*img*/
 
@@ -285,6 +293,7 @@ p{
     border-radius: 100px;
     height: 200px;
     width: 200px;
+    position: relative;
 }
 
 
